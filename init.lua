@@ -52,6 +52,8 @@ local frametypes = {
       },
 }
 
+
+
 for material, modname in pairs(materials) do
 	
 	if minetest.get_modpath(modname) then
@@ -73,7 +75,7 @@ for material, modname in pairs(materials) do
 						drawtype = "mesh",
 						mesh = f.model,
 						tiles = {texture},
-						inventory_image = texture .. "^" .. f.node .. ".png",
+						inventory_image = "(" .. texture .. "^" .. f.node .. ".png^of.png)^[makealpha:0,0,0",
 						wield_image = texture .. "^" .. f.node .. ".png",
 						paramtype = "light",
 						paramtype2 = "facedir",
