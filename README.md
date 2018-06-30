@@ -8,6 +8,8 @@ effect.
 
 So far only wooden frames have been added. Supported mods: default, ethereal, maple.
 
+![Aspen and acacia frames](https://github.com/h-v-smacker/si_frames/blob/master/screenshot.jpg)
+
 How to use:
 Stand in front of the glass pane and place the frame on it. To remove, use the hitbox
 that will appear in front of the glass. It is slightly smaller than a regular node box to
