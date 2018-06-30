@@ -22,7 +22,7 @@ local materials = {
 local frametypes = {
 	{
 		name = "Simple window frame", 
-		node = "window_frame_simple", 
+		node = "wfs", 
 		model = "si_frame_simple.obj",
 		howto = {
 				{"default:stick", "default:stick", "default:stick"},
@@ -32,7 +32,7 @@ local frametypes = {
       },
 	{
 		name = "Quartered window frame", 
-		node = "window_frame_quartered", 
+		node = "wfq", 
 		model = "si_frame_quartered.obj",
 		howto = {
 				{"", "default:stick", ""},
@@ -42,7 +42,7 @@ local frametypes = {
       },
 	{
 		name = "Quartered (diagonal) window frame", 
-		node = "window_frame_quartered_diagonal", 
+		node = "wfqd", 
 		model = "si_frame_quartered_diagonal.obj",
 		howto = {
 				{"default:stick", "", "default:stick"},
