@@ -15,34 +15,34 @@ Stand in front of the glass pane and place the frame on it. To remove, use the h
 that will appear in front of the glass. It is slightly smaller than a regular node box to
 make it easier to tell apart.
 
-Regular square frame (□):
+Regular square frame (▢):
 
 ```
-stick, stick, stick
-stick, %wood_planks%, stick
-stick, stick, stick
+stick,	stick, 		stick
+stick,	%wood_planks%,	stick
+stick,	stick, 		stick
 ```
 
 Quartered square frame (▢ + ✛):
 
 ```
-"", stick, ""
-stick, %wood_planks%, stick
-"", stick, ""
+"",		stick, 		""
+stick,	%wood_planks%,	stick
+"",		stick, 		""
 ```
 
 Diagonally quartered frame (▢ + ✕):
 
 ```
-stick, "", stick
-"", %wood_planks%, ""
-stick, "", stick
+stick,	"",			stick
+"",		%wood_planks%,	""
+stick,	"",			stick
 ```
 
 Rhombus frame (▢ + ◇):
 
 ```
-"", stick, stick
-"", %wood_planks%, ""
-stick, stick, ""
+"",		stick,		stick
+"",		%wood_planks%,	""
+stick,	stick,		""
 ```
