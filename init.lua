@@ -52,7 +52,46 @@ local frametypes = {
       },
 }
 
+minetest.register_node("si_frames:test", {
+	description = "Universal frame test",
+	tiles = { 	"inset_glass.png^((maple_wood.png^tmask.png)^[makealpha:0,0,0)"
+			},
+	paramtype = "light",
+	drawtype = "nodebox",
+})
 
+minetest.register_node("si_frames:universal", {
+	description = "Universal frame",
+	tiles = {	"maple_wood.png",
+			"maple_wood.png",
+			"maple_wood.png^[transformR90",
+			"maple_wood.png^[transformR90",
+			"inset_glass.png^(((maple_wood.png^tmask.png)^[makealpha:0,0,0)^((maple_wood.png^[transformR90^tmask2.png)^[makealpha:0,0,0))",
+			"inset_glass.png^(((maple_wood.png^tmask.png)^[makealpha:0,0,0)^((maple_wood.png^[transformR90^tmask2.png)^[makealpha:0,0,0))",
+			},
+	paramtype = "light",
+	paramtype2 = "facedir",
+	drawtype = "nodebox",
+-- 	on_place = minetest.rotate_node,
+	is_ground_content = false,
+	sunlight_propagates = true,
+	legacy_facedir_simple = true,
+	connects_to = {"group:stone", "group:wood", "group:window_frames"},
+	node_box = {
+		type = "connected",
+		fixed = {-0.5, -0.5, -0.05, 0.5, 0.5, 0.05},
+		connect_top = {-0.5, 0.433, -0.125, 0.5, 0.5, 0.125},
+ 		connect_bottom = {-0.5, -0.5, -0.125, 0.5, -0.433, 0.125},
+		connect_left = { -0.5, -0.5, -0.125, -0.433, 0.5, 0.125 },
+		connect_right = { 0.433, -0.5, -0.125, 0.5, 0.5, 0.125 },
+-- 		connect_front = box OR {box1, box2, ...},
+-- 		connect_back = box OR {box1, box2, ...},
+	},
+	selection_box = { type = "fixed",
+				fixed = {{-0.5, -0.5, -0.1, 0.5, 0.5, 0.1}}
+				},
+	collisionbox = {{-0.5, -0.5, -0.1, 0.5, 0.5, 0.1}},
+})
 
 for material, modname in pairs(materials) do
 	
@@ -81,7 +120,7 @@ for material, modname in pairs(materials) do
 						paramtype2 = "facedir",
 						is_ground_content = false,
 						sunlight_propagates = true,
-						groups = {choppy=1, snappy=1, oddly_breakable_by_hand=1 },
+						groups = {choppy=1, snappy=1, oddly_breakable_by_hand=1, window_frames=1 },
 						sounds = default.node_sound_stone_defaults(),
 						walkable = false,
 						selection_box = { type = "fixed",
