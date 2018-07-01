@@ -18,17 +18,17 @@ make it easier to tell apart.
 Regular square frame (▢):
 
 ```
-stick,   stick, 		stick
-stick,   %wood_planks%,	stick
-stick,   stick, 		stick
+stick,   stick,            stick
+stick,   %wood_planks%,    stick
+stick,   stick,            stick
 ```
 
 Quartered square frame (▢ + ✛):
 
 ```
-"",      stick, 		""
-stick,   %wood_planks%,	stick
-"",      stick, 		""
+"",      stick,            ""
+stick,   %wood_planks%,    stick
+"",      stick,              ""
 ```
 
 Diagonally quartered frame (▢ + ✕):
