@@ -23,7 +23,7 @@ stick, %wood_planks%, stick
 stick, stick, stick
 ```
 
-Quartered square frame (□ + ➕):
+Quartered square frame (▢ + ✛):
 
 ```
 "", stick, ""
@@ -31,10 +31,18 @@ stick, %wood_planks%, stick
 "", stick, ""
 ```
 
-Diagonally quartered frame (□ + ✕):
+Diagonally quartered frame (▢ + ✕):
 
 ```
 stick, "", stick
 "", %wood_planks%, ""
 stick, "", stick
+```
+
+Rhombus frame (▢ + ◇):
+
+```
+"", stick, stick
+"", %wood_planks%, ""
+stick, stick, ""
 ```
