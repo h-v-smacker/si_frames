@@ -28,7 +28,7 @@ Quartered square frame (▢ + ✛):
 ```
 "",      stick,            ""
 stick,   %wood_planks%,    stick
-"",      stick,              ""
+"",      stick,            ""
 ```
 
 Diagonally quartered frame (▢ + ✕):
