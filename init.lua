@@ -53,7 +53,7 @@ local frametypes = {
       {
 		name = "Rhombus window frame", 
 		node = "wfr", 
-		model = "si_frame_rhombus.obj",
+		model = "si_frame_rhombus2.obj",
 		howto = {
 				{"", "default:stick", "default:stick"},
 				{"", "%MATERIAL%", ""},
