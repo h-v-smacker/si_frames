@@ -16,6 +16,8 @@ local materials = {
 	["willow_wood"] = "ethereal",
 	["yellow_wood"] = "ethereal",
 	["redwood_wood"] = "ethereal",
+	["olive_wood"] = "ethereal",
+	["sakura_wood"] = "ethereal",
 }
 
 
